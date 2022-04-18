@@ -388,7 +388,7 @@ Begin VB.Form frmPanelAccount
    Begin VB.Label lblCharData 
       AutoSize        =   -1  'True
       BackStyle       =   0  'Transparent
-      Caption         =   "Ubicación"
+      Caption         =   "UbicaciÃ³n"
       ForeColor       =   &H00FFFFFF&
       Height          =   195
       Index           =   1
