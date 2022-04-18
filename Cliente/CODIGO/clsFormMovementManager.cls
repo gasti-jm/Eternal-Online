@@ -82,3 +82,4 @@ Private Sub Formulario_MouseMove(Button As Integer, Shift As Integer, X As Singl
         Formulario.Top = Formulario.Top + (Y - Dragy)
     End If
 End Sub
+

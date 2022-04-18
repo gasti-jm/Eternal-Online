@@ -2,7 +2,7 @@ VERSION 5.00
 Begin VB.Form frmCrearCuenta 
    BackColor       =   &H00808080&
    BorderStyle     =   0  'None
-   Caption         =   "Creación de cuenta"
+   Caption         =   "CreaciÃ³n de cuenta"
    ClientHeight    =   8130
    ClientLeft      =   0
    ClientTop       =   -45
@@ -108,7 +108,7 @@ Begin VB.Form frmCrearCuenta
    Begin VB.Label Label2 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
-      Caption         =   "Contraseña:"
+      Caption         =   "ContraseÃ±a:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   9.75
@@ -127,7 +127,7 @@ Begin VB.Form frmCrearCuenta
    Begin VB.Label Label3 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
-      Caption         =   "Confirmar contraseña:"
+      Caption         =   "Confirmar contraseÃ±a:"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
          Size            =   9.75
@@ -244,7 +244,7 @@ Private Sub CrearCuenta_Click()
     
     If Not UserPassword = pass1Txt.Text Then
         
-        MsgBox "Las contraseñas no coinciden."
+        MsgBox "Las contraseÃ±as no coinciden."
         
         Exit Sub
     
@@ -321,4 +321,5 @@ If pass1Txt.Text = vbNullString Then
  End If
 End If
 End Sub
+
 

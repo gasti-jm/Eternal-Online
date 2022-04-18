@@ -227,12 +227,14 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+
+
 'Argentum Online 0.11.6
 '
-'Copyright (C) 2002 Márquez Pablo Ignacio
+'Copyright (C) 2002 MÃ¡rquez Pablo Ignacio
 'Copyright (C) 2002 Otto Perez
 'Copyright (C) 2002 Aaron Perkins
-'Copyright (C) 2002 Matías Fernando Pequeño
+'Copyright (C) 2002 MatÃ­as Fernando PequeÃ±o
 '
 'This program is free software; you can redistribute it and/or modify
 'it under the terms of the Affero General Public License;
@@ -254,10 +256,10 @@ Attribute VB_Exposed = False
 'You can contact me at:
 'morgolock@speedy.com.ar
 'www.geocities.com/gmorgolock
-'Calle 3 número 983 piso 7 dto A
+'Calle 3 nÃºmero 983 piso 7 dto A
 'La Plata - Pcia, Buenos Aires - Republica Argentina
-'Código Postal 1900
-'Pablo Ignacio Márquez
+'CÃ³digo Postal 1900
+'Pablo Ignacio MÃ¡rquez
 
 
 
@@ -401,14 +403,14 @@ Private Sub PicBancoInv_Click()
             
             Select Case .OBJType
                 Case 2, 32
-                    Label1(1).Caption = "Máx Golpe:" & .MaxHit
-                    Label1(2).Caption = "Mín Golpe:" & .MinHit
+                    Label1(1).Caption = "MÃ¡x Golpe:" & .MaxHit
+                    Label1(2).Caption = "MÃ­n Golpe:" & .MinHit
                     Label1(1).Visible = True
                     Label1(2).Visible = True
                     
                 Case 3, 16, 17
-                    Label1(1).Caption = "Máx Defensa:" & .MaxDef
-                    Label1(2).Caption = "Mín Defensa:" & .MinDef
+                    Label1(1).Caption = "MÃ¡x Defensa:" & .MaxDef
+                    Label1(2).Caption = "MÃ­n Defensa:" & .MinDef
                     Label1(1).Visible = True
                     Label1(2).Visible = True
                     
@@ -440,14 +442,14 @@ Private Sub PicInv_Click()
             
             Select Case .OBJType(InvBanco(1).SelectedItem)
                 Case eObjType.otWeapon, eObjType.otFlechas
-                    Label1(1).Caption = "Máx Golpe:" & .MaxHit(InvBanco(1).SelectedItem)
-                    Label1(2).Caption = "Mín Golpe:" & .MinHit(InvBanco(1).SelectedItem)
+                    Label1(1).Caption = "MÃ¡x Golpe:" & .MaxHit(InvBanco(1).SelectedItem)
+                    Label1(2).Caption = "MÃ­n Golpe:" & .MinHit(InvBanco(1).SelectedItem)
                     Label1(1).Visible = True
                     Label1(2).Visible = True
                     
                 Case eObjType.otcasco, eObjType.otArmadura, eObjType.otescudo ' 3, 16, 17
-                    Label1(1).Caption = "Máx Defensa:" & .MaxDef(InvBanco(1).SelectedItem)
-                    Label1(2).Caption = "Mín Defensa:" & .MinDef(InvBanco(1).SelectedItem)
+                    Label1(1).Caption = "MÃ¡x Defensa:" & .MaxDef(InvBanco(1).SelectedItem)
+                    Label1(2).Caption = "MÃ­n Defensa:" & .MinDef(InvBanco(1).SelectedItem)
                     Label1(1).Visible = True
                     Label1(2).Visible = True
                     

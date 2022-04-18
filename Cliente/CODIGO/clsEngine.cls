@@ -158,7 +158,7 @@ Private Type particle_group
     move_y2 As Integer
     rgb_list(3) As Long
    
-    'Added by Juan Martín Sotuyo Dodero
+    'Added by Juan MartÃ­n Sotuyo Dodero
     Speed As Single
     life_counter As Long
    
@@ -332,7 +332,7 @@ Private Sub Engine_Init_PrincipalVariables()
     
     Tile_Buffer_Size = 1 '// Lo uso en 1, por que manda a dibujar fuera del render al pedo :P
     
-    'Tamaño de Tiles = 32x32
+    'TamaÃ±o de Tiles = 32x32
     Tile_Pixel_Size = 32
     
     HalfWindowTileHeight = Round(Config_Inicio.ResolutionY / 32, 0) \ 2
@@ -1442,7 +1442,7 @@ Private Function Particle_Group_Destroy(ByVal particle_group_index As Long)
 End Function
 Private Function Particle_Type_Get(ByVal particle_index As Long) As Long
 '*****************************************************************
-'Author: Juan Martín Sotuyo Dodero (juansotuyo@hotmail.com)
+'Author: Juan MartÃ­n Sotuyo Dodero (juansotuyo@hotmail.com)
 'Last Modify Date: 8/27/2003
 'Returns the stream type of a particle stream
 '*****************************************************************
@@ -2099,7 +2099,7 @@ Dim line As String
         Call Draw_GrhIndex(GRH_BARRA_EXP, PosHUDX - 6, PosHUDY - 9, 1, Round(((UserExp / 100) / (UserPasarNivel / 100)) * 330), 9)
         Engine_Text_Render line, PosHUDX - Engine_Text_Width(line) / 2, PosHUDY + 11, LongWhite
     Else
-        line = "¡Nivel maximo!"
+        line = "Â¡Nivel maximo!"
         Call Draw_GrhIndex(GRH_BARRA_EXP, PosHUDX - 6, PosHUDY - 9, 1)
         Engine_Text_Render line, PosHUDX - Engine_Text_Width(line) / 2, PosHUDY + 11, LongWhite
     End If
@@ -2291,3 +2291,4 @@ AmbientClima(3) = AmbientClima(0)
     Engine_EndScene MainScreenRect, frmConnect.picRender.hWnd
 
 End Sub
+

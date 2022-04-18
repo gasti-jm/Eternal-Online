@@ -263,10 +263,10 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 'Argentum Online 0.11.6
 '
-'Copyright (C) 2002 Márquez Pablo Ignacio
+'Copyright (C) 2002 MÃ¡rquez Pablo Ignacio
 'Copyright (C) 2002 Otto Perez
 'Copyright (C) 2002 Aaron Perkins
-'Copyright (C) 2002 Matías Fernando Pequeño
+'Copyright (C) 2002 MatÃ­as Fernando PequeÃ±o
 '
 'This program is free software; you can redistribute it and/or modify
 'it under the terms of the Affero General Public License;
@@ -288,10 +288,10 @@ Attribute VB_Exposed = False
 'You can contact me at:
 'morgolock@speedy.com.ar
 'www.geocities.com/gmorgolock
-'Calle 3 número 983 piso 7 dto A
+'Calle 3 nÃºmero 983 piso 7 dto A
 'La Plata - Pcia, Buenos Aires - Republica Argentina
-'Código Postal 1900
-'Pablo Ignacio Márquez
+'CÃ³digo Postal 1900
+'Pablo Ignacio MÃ¡rquez
 
 Option Explicit
 Public WithEvents Client As clsSocket
@@ -488,7 +488,7 @@ Es_Real = True
                 Case CustomKeys.BindedKey(eKeyType.mKeyTamAnimal)
                     If UserEstado = 1 Then
                         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                            Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                            Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
                         End With
                     Else
                         Call WriteWork(eSkill.Domar)
@@ -497,7 +497,7 @@ Es_Real = True
                 Case CustomKeys.BindedKey(eKeyType.mKeySteal)
                     If UserEstado = 1 Then
                         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                            Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                            Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
                         End With
                     Else
                         Call WriteWork(eSkill.Robar)
@@ -506,7 +506,7 @@ Es_Real = True
                 Case CustomKeys.BindedKey(eKeyType.mKeyHide)
                     If UserEstado = 1 Then
                         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                            Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                            Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
                         End With
                     Else
                         Call WriteWork(eSkill.Ocultarse)
@@ -548,7 +548,7 @@ Es_Real = True
             
             If UserEstado = 1 Then
                 With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                    Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                    Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
                 End With
                 Exit Sub
             End If
@@ -558,7 +558,7 @@ Es_Real = True
         Case CustomKeys.BindedKey(eKeyType.mKeyWorkMacro)
             If UserEstado = 1 Then
                 With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                    Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                    Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
                 End With
                 Exit Sub
             End If
@@ -696,7 +696,7 @@ Private Sub imgMeditate_Click()
         If UserMinMAN = UserMaxMAN Then Exit Sub
             If UserEstado = 1 Then 'Muerto
                 With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                    Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                    Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
                 End With
                 Exit Sub
             End If
@@ -734,7 +734,7 @@ Private Sub Macros_MouseUp(Index As Integer, Button As Integer, Shift As Integer
         End If
     Else
         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-            Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+            Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
         End With
     End If
 End Sub
@@ -822,11 +822,11 @@ Private Sub mnuUsar_Click()
 End Sub
 
 Private Sub PicMH_Click()
-    Call AddtoRichTextBox(frmMain.RecTxt, "Auto lanzar hechizos. Utiliza esta habilidad para entrenar únicamente. Para activarlo/desactivarlo utiliza F7.", 255, 255, 255, False, False, True)
+    Call AddtoRichTextBox(frmMain.RecTxt, "Auto lanzar hechizos. Utiliza esta habilidad para entrenar Ãºnicamente. Para activarlo/desactivarlo utiliza F7.", 255, 255, 255, False, False, True)
 End Sub
 
 Private Sub Coord_Click()
-    Call AddtoRichTextBox(frmMain.RecTxt, "Estas coordenadas son tu ubicación en el mapa. Utiliza la letra L para corregirla si esta no se corresponde con la del servidor por efecto del Lag.", 255, 255, 255, False, False, True)
+    Call AddtoRichTextBox(frmMain.RecTxt, "Estas coordenadas son tu ubicaciÃ³n en el mapa. Utiliza la letra L para corregirla si esta no se corresponde con la del servidor por efecto del Lag.", 255, 255, 255, False, False, True)
 End Sub
 Private Sub Minimap_MouseUp(Button As Integer, Shift As Integer, X As Single, Y As Single)
 Call WriteWarpChar("YO", UserMap, IIf(X < 1, 1, X), Y)
@@ -847,7 +847,7 @@ Select Case Index
     Case eSMType.mSpells
         If UserEstado = 1 Then
             With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
             End With
             Exit Sub
         End If
@@ -855,7 +855,7 @@ Select Case Index
     Case eSMType.mWork
         If UserEstado = 1 Then
             With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
             End With
             Exit Sub
         End If
@@ -882,7 +882,7 @@ End Sub
 Private Sub TirarItem()
     If UserEstado = 1 Then
         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-            Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+            Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
         End With
     Else
         If (Inventario.SelectedItem > 0 And Inventario.SelectedItem < MAX_INVENTORY_SLOTS + 1) Or (Inventario.SelectedItem = FLAGORO) Then
@@ -900,7 +900,7 @@ End Sub
 Private Sub AgarrarItem()
     If UserEstado = 1 Then
         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-            Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+            Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
         End With
     Else
         Call WritePickUp
@@ -919,7 +919,7 @@ End Sub
 Private Sub EquiparItem()
     If UserEstado = 1 Then
         With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
         End With
     Else
         If Comerciando Then Exit Sub
@@ -933,7 +933,7 @@ Private Sub hlst_DblClick()
     If hlst.List(hlst.ListIndex) <> "(None)" And MainTimer.Check(TimersIndex.Work, False) Then
         If UserEstado = 1 Then
             With FontTypes(FontTypeNames.FONTTYPE_INFO)
-                Call ShowConsoleMsg("¡¡Estás muerto!!", .red, .green, .blue, .bold, .italic)
+                Call ShowConsoleMsg("Â¡Â¡EstÃ¡s muerto!!", .red, .green, .blue, .bold, .italic)
             End With
         Else
             Call WriteCastSpell(hlst.ListIndex + 1)
@@ -973,7 +973,7 @@ Private Sub Form_Click()
                         End If
                         UsingSkill = 0
                         With FontTypes(FontTypeNames.FONTTYPE_TALK)
-                            Call AddtoRichTextBox(frmMain.RecTxt, "No puedes lanzar proyectiles tan rápido.", .red, .green, .blue, .bold, .italic)
+                            Call AddtoRichTextBox(frmMain.RecTxt, "No puedes lanzar proyectiles tan rÃ¡pido.", .red, .green, .blue, .bold, .italic)
                         End With
                         Exit Sub
                     End If
@@ -989,7 +989,7 @@ Private Sub Form_Click()
                             
                             UsingSkill = 0
                             With FontTypes(FontTypeNames.FONTTYPE_TALK)
-                                Call AddtoRichTextBox(frmMain.RecTxt, "No puedes lanzar proyectiles tan rápido.", .red, .green, .blue, .bold, .italic)
+                                Call AddtoRichTextBox(frmMain.RecTxt, "No puedes lanzar proyectiles tan rÃ¡pido.", .red, .green, .blue, .bold, .italic)
                             End With
                             Exit Sub
                         End If
@@ -1002,7 +1002,7 @@ Private Sub Form_Click()
                                 'frmMain.MousePointer = vbDefault
                                 'UsingSkill = 0
                                 'With FontTypes(FontTypeNames.FONTTYPE_TALK)
-                                '    Call AddtoRichTextBox(frmMain.RecTxt, "No puedes lanzar hechizos tan rápido.", .red, .green, .blue, .bold, .italic)
+                                '    Call AddtoRichTextBox(frmMain.RecTxt, "No puedes lanzar hechizos tan rÃ¡pido.", .red, .green, .blue, .bold, .italic)
                                ' End With
                                 Exit Sub
                             End If
@@ -1320,3 +1320,4 @@ Private Sub tTrueno_Timer()
         End If
     End If
 End Sub
+

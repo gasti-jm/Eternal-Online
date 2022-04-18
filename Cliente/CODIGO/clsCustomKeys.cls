@@ -42,7 +42,7 @@ Attribute VB_Exposed = False
 '03/08/2007 - Rapsodius
 '   - First Release
 '
-'13/04/2008 - Juan Martín Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
+'13/04/2008 - Juan MartÃ­n Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
 '   - Removed lots of unwanted buggy features keeping it clean. Revised documentation and coding standards.
 
 
@@ -135,7 +135,7 @@ Public Function ReadableName(ByVal KeyCode As Integer) As String
             ReadableName = Chr$(KeyCode)
         
         Case KeyCodeConstants.vbKeyNumpad0 To KeyCodeConstants.vbKeyNumpad9
-            ReadableName = KeyCode - KeyCodeConstants.vbKeyNumpad0 & " (teclado numérico)"
+            ReadableName = KeyCode - KeyCodeConstants.vbKeyNumpad0 & " (teclado numÃ©rico)"
         
         Case KeyCodeConstants.vbKeyF1 To KeyCodeConstants.vbKeyF16
             ReadableName = "F" & (KeyCode - KeyCodeConstants.vbKeyF1 + 1)
@@ -150,7 +150,7 @@ Public Function ReadableName(ByVal KeyCode As Integer) As String
             'Note: Separator appears in MSDN as the Enter key for
             'the numpad, but MS recognizes it as the normal
             'Enter key
-            ReadableName = "Enter (teclado numérico)"
+            ReadableName = "Enter (teclado numÃ©rico)"
         
         Case KeyCodeConstants.vbKeySubtract
             ReadableName = "- (teclado numerico)"

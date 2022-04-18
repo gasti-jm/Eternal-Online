@@ -577,10 +577,10 @@ Attribute VB_Exposed = False
 
 'Argentum Online 0.11.6
 '
-'Copyright (C) 2002 M·rquez Pablo Ignacio
+'Copyright (C) 2002 M√°rquez Pablo Ignacio
 'Copyright (C) 2002 Otto Perez
 'Copyright (C) 2002 Aaron Perkins
-'Copyright (C) 2002 MatÌas Fernando PequeÒo
+'Copyright (C) 2002 Mat√≠as Fernando Peque√±o
 '
 'This program is free software; you can redistribute it and/or modify
 'it under the terms of the Affero General Public License;
@@ -602,10 +602,10 @@ Attribute VB_Exposed = False
 'You can contact me at:
 'morgolock@speedy.com.ar
 'www.geocities.com/gmorgolock
-'Calle 3 n˙mero 983 piso 7 dto A
+'Calle 3 n√∫mero 983 piso 7 dto A
 'La Plata - Pcia, Buenos Aires - Republica Argentina
-'CÛdigo Postal 1900
-'Pablo Ignacio M·rquez
+'C√≥digo Postal 1900
+'Pablo Ignacio M√°rquez
 
 ''
 'frmCustomKeys - Allows the user to customize keys.
@@ -679,7 +679,7 @@ Private Sub imgGuardar_Click()
     
     For i = 1 To CustomKeys.Count
         If LenB(Text1(i).Text) = 0 Then
-            Call MsgBox("Hay una o m·s teclas no v·lidas, por favor verifique.", vbCritical Or vbOKOnly Or vbApplicationModal Or vbDefaultButton1, "Argentum Online")
+            Call MsgBox("Hay una o m√°s teclas no v√°lidas, por favor verifique.", vbCritical Or vbOKOnly Or vbApplicationModal Or vbDefaultButton1, "Argentum Online")
             Exit Sub
         End If
     Next i
@@ -721,3 +721,4 @@ End Sub
 Private Sub Text1_MouseMove(Index As Integer, Button As Integer, Shift As Integer, X As Single, Y As Single)
     LastPressed.ToggleToNormal
 End Sub
+

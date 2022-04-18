@@ -14,7 +14,7 @@ Attribute VB_Exposed = False
 '**************************************************************
 ' clsAudio.cls - Controls all audio using DirectSound and DirectMusic
 '
-' Designed and implemented by Juan Martín Sotuyo Dodero (Maraxus)
+' Designed and implemented by Juan MartÃ­n Sotuyo Dodero (Maraxus)
 ' (juansotuyo@hotmail.com)
 '**************************************************************
 
@@ -34,16 +34,16 @@ Attribute VB_Exposed = False
 'Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 '**************************************************************************
 
-'16/03/2004 - Juan Martín Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
+'16/03/2004 - Juan MartÃ­n Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
 '   - First Release
 '
-'03/03/2007 - Juan Martín Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
+'03/03/2007 - Juan MartÃ­n Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
 '   - Add: Sound and Music activation / deactivation from within the class.
 '   - Add: Documentation
 '   - Change: Volume is no longer the dB amplification / atenuation to be
 '           applied but a percentage for easier interaction with user.
 '
-'30/03/2008 - Juan Martín Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
+'30/03/2008 - Juan MartÃ­n Sotuyo Dodero (Maraxus) - (juansotuyo@gmail.com)
 '   - Add: 3D-like sound effects by altering frequency to emulate Doppler effect,
 '           volume to emulate distance and panning for position.
 '
@@ -57,7 +57,7 @@ Attribute VB_Exposed = False
 ' Controls all audio using DirectSound and DirectMusic 7.
 '
 ' @file     clsAudio.cls
-' @author   Juan Martín Sotuyo Dodero (Maraxus) juansotuyo@gmail.com
+' @author   Juan MartÃ­n Sotuyo Dodero (Maraxus) juansotuyo@gmail.com
 ' @version  1.2.1
 ' @date     20070303
 
@@ -183,7 +183,7 @@ Dim IMPos As IMediaPosition
 
 Private Sub Class_Initialize()
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 '
 '***************************************************
@@ -194,7 +194,7 @@ End Sub
 
 Private Sub Class_Terminate()
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 12/31/09
 'Destroy's all DirectMusic and DirectSound objects
 '12/31/09 - Pato: Use StopWave method to prevent errors.
@@ -238,7 +238,7 @@ End Sub
 
 Public Function Initialize(ByRef dX As DirectX8, ByVal hWnd As Long, ByVal sound_path As String, ByVal music_path As String) As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Creates all DS and DM objects
 '***************************************************
@@ -294,7 +294,7 @@ End Function
 
 Private Function InitializedirectMusic(ByRef dX As DirectX8, ByVal hWnd As Long) As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Initialize DM. Returns false if music isn't supported by HW
 '***************************************************
@@ -329,7 +329,7 @@ End Function
 
 Public Function PlayWave(ByVal FileName As String, Optional ByVal srcX As Byte = 0, Optional ByVal srcY As Byte = 0, Optional ByVal LoopSound As LoopStyle = LoopStyle.Default) As Long
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 28/07/08
 'Last Modified by: Franco Zeoli (Noich)
 'Added support for 3D sound effects.
@@ -388,7 +388,7 @@ End Sub
 
 Private Sub Update3DSound(ByVal bufferIndex As Long, ByVal deltaX As Integer, ByVal deltaY As Integer)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 05/09/09
 'Last Modified by: Marco Vanotti (MarKoxX)
 'Fixed Dopplers formula
@@ -447,7 +447,7 @@ End Sub
 
 Public Sub MoveListener(ByVal x As Integer, ByVal y As Integer)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 28/07/08
 'Last Modification by: Franco Zeoli (Noich)
 'Moves the position of the listener updating all 3D sounds.
@@ -485,7 +485,7 @@ End Sub
 
 Private Function LoadWave(ByVal FileName As String, ByVal looping As LoopStyle) As Long
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 04/28/09
 'Last Modification by: Marco Vanotti (MarKoxX)
 'Loads a new wave into memory (if it's not already loaded) and returns
@@ -583,7 +583,7 @@ End Function
 
 Public Sub StopWave(Optional ByVal bufferIndex As Long = 0)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Stops the sound in the given buffer index, or every sound if
 'index is 0
@@ -611,7 +611,7 @@ End Sub
 
 Public Property Get PlayingSound() As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Returns true if there is at least one sound playing
 '***************************************************
@@ -634,7 +634,7 @@ End Property
 
 Public Property Let SoundVolume(ByVal Volume As Byte)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Sets the sound's volume as a percentage
 '***************************************************
@@ -661,7 +661,7 @@ End Property
 
 Public Property Get SoundVolume() As Byte
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Sets the music's volume as a percentage
 '***************************************************
@@ -678,7 +678,7 @@ End Property
 
 Public Function PlayMIDI(Optional ByVal file As String = "", Optional ByVal Loops As Long = -1) As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Loads a midi and start to play it
 '***************************************************
@@ -721,7 +721,7 @@ End Function
 
 Private Function LoadMidi(ByVal file As String) As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Loads a midi to memory
 '***************************************************
@@ -752,7 +752,7 @@ End Function
 
 Public Sub StopMidi()
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Stops playing a midi
 '***************************************************
@@ -772,7 +772,7 @@ End Sub
 
 Public Property Let MusicTempo(ByVal Tempo As Single)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Sets the music's tempo
 '***************************************************
@@ -790,7 +790,7 @@ End Property
 
 Public Property Let MusicVolume(ByVal Volume As Long)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Sets the music's volume as a percentage
 '***************************************************
@@ -809,7 +809,7 @@ End Property
 
 Public Property Get MusicTempo() As Single
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Returns the music's tempo
 '***************************************************
@@ -825,7 +825,7 @@ End Property
 
 Public Property Get MusicVolume() As Long
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Returns the music's volume as a percentage
 '***************************************************
@@ -841,7 +841,7 @@ End Property
 
 Public Property Get PlayingMusic() As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Returns True if a midi is being played
 '***************************************************
@@ -857,7 +857,7 @@ End Property
 
 Public Property Get MusicLenght() As Long
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 16/03/04
 'Returns the lenght of the current midi
 '***************************************************
@@ -1016,7 +1016,7 @@ End Function
 
 Public Function MusicMP3Pause() As Boolean
 '***************************************************
-' Created by: Juan Martín Sotuyo Dodero
+' Created by: Juan MartÃ­n Sotuyo Dodero
 ' Modify Date: 25/6/2004
 '***************************************************
     On Error GoTo ErrorHandl
@@ -1062,7 +1062,7 @@ End Function
 
 Public Property Get MusicActivated() As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 03/03/07
 'Retrieves wether the music is activated or not
 '***************************************************
@@ -1076,7 +1076,7 @@ End Property
 
 Public Property Let MusicActivated(ByVal nValue As Boolean)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 03/03/07
 'Sets wether the music is activated or not
 '***************************************************
@@ -1098,7 +1098,7 @@ End Property
 
 Public Property Get SoundActivated() As Boolean
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 03/03/07
 'Retrieves wether the sound is activated or not
 '***************************************************
@@ -1112,7 +1112,7 @@ End Property
 
 Public Property Let SoundActivated(ByVal nValue As Boolean)
 '***************************************************
-'Author: Juan Martín Sotuyo Dodero (Maraxus)
+'Author: Juan MartÃ­n Sotuyo Dodero (Maraxus)
 'Last Modification: 03/03/07
 'Sets wether the sound is activated or not
 '***************************************************

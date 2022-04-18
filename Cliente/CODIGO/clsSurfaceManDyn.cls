@@ -17,7 +17,7 @@ Attribute VB_Exposed = False
 'For removale it uses LRU, attempting to just keep in memory those surfaces
 'that are actually usefull.
 '
-' Developed by Maraxus (Juan Martín Sotuyo Dodero - juansotuyo@hotmail.com)
+' Developed by Maraxus (Juan MartÃ­n Sotuyo Dodero - juansotuyo@hotmail.com)
 ' Last Modify Date: 3/06/2006
 '**************************************************************
 
@@ -85,7 +85,7 @@ Private Declare Function SetDIBitsToDevice Lib "GDI32.dll" _
 
 Private Sub Class_Initialize()
 '**************************************************************
-'Author: Juan Martín Sotuyo Dodero
+'Author: Juan MartÃ­n Sotuyo Dodero
 'Last Modify Date: 3/06/2006
 '
 '**************************************************************
@@ -95,7 +95,7 @@ End Sub
 
 Private Sub Class_Terminate()
 '**************************************************************
-'Author: Juan Martín Sotuyo Dodero
+'Author: Juan MartÃ­n Sotuyo Dodero
 'Last Modify Date: 3/06/2006
 'Clean up
 '**************************************************************
@@ -117,7 +117,7 @@ End Sub
 
 Private Sub clsSurfaceManager_Initialize(ByRef DD As D3DX8, ByVal graphicPath As String, Optional ByVal maxMemoryUsageInMb As Long = -1)
 '**************************************************************
-'Author: Juan Martín Sotuyo Dodero
+'Author: Juan MartÃ­n Sotuyo Dodero
 'Last Modify Date: 29/07/2012 - ^[GS]^
 'Initializes the manager
 '**************************************************************
@@ -136,7 +136,7 @@ End Sub
 
 Private Property Get clsSurfaceManager_Surface(ByVal fileIndex As Long) As Direct3DTexture8
 '**************************************************************
-'Author: Juan Martín Sotuyo Dodero
+'Author: Juan MartÃ­n Sotuyo Dodero
 'Last Modify Date: 3/06/2006
 'Retrieves the requested texture
 '**************************************************************
@@ -217,7 +217,7 @@ End Function
 
 Private Function RemoveLRU() As Boolean
 '**************************************************************
-'Author: Juan Martín Sotuyo Dodero
+'Author: Juan MartÃ­n Sotuyo Dodero
 'Last Modify Date: 3/06/2006
 'Removes the Least Recently Used surface to make some room for new ones
 '**************************************************************
@@ -270,5 +270,6 @@ Private Function RemoveLRU() As Boolean
         usedBytes = usedBytes - ddsd.Size
     End If
 End Function
+
 
 

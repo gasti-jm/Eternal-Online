@@ -530,3 +530,4 @@ Private Sub txtPassword_KeyPress(KeyAscii As Integer)
     '    Me.txtPassword.Text = vbNullString
     'End If
 End Sub
+
