@@ -389,7 +389,7 @@ Call Audio.PlayWave(SND_CLICK)
 End Sub
 
 Private Sub imgSalir_Click()
-If MsgBox("¿Está seguro que desea salir?", vbYesNo + vbInformation, "Salir") = vbYes Then prgRun = False
+If MsgBox("�Estas seguro que desea salir?", vbYesNo + vbInformation, "Salir") = vbYes Then prgRun = False
 End Sub
 
 Private Sub lst_servers_Click()

@@ -2099,7 +2099,7 @@ Dim line As String
         Call Draw_GrhIndex(GRH_BARRA_EXP, PosHUDX - 6, PosHUDY - 9, 1, Round(((UserExp / 100) / (UserPasarNivel / 100)) * 330), 9)
         Engine_Text_Render line, PosHUDX - Engine_Text_Width(line) / 2, PosHUDY + 11, LongWhite
     Else
-        line = "Â¡Nivel maximo!"
+        line = "¡Nivel maximo!"
         Call Draw_GrhIndex(GRH_BARRA_EXP, PosHUDX - 6, PosHUDY - 9, 1)
         Engine_Text_Render line, PosHUDX - Engine_Text_Width(line) / 2, PosHUDY + 11, LongWhite
     End If
