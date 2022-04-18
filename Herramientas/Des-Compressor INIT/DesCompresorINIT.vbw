@@ -2,5 +2,5 @@ frmMain = 156, 156, 1037, 598, , 26, 26, 907, 468, C
 frmRuta = 104, 104, 985, 546, , 78, 78, 959, 520, C
 modGeneral = 130, 130, 1011, 572, 
 modComprimir = 104, 104, 985, 546, 
-modDescomprimir = 130, 130, 1011, 572, Z
+modDescomprimir = 130, 130, 1011, 572, 
 FindFolder = 182, 182, 1063, 624, 
