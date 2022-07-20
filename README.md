@@ -1,6 +1,6 @@
 # Eternal Online
 <a target="_blank"><img src="https://img.shields.io/badge/Build%20for-Windows-43ca1f.svg"></img></a>
-<a target="_blank"><img src="https://img.shields.io/badge/Made%20in-Visual%20Basic%206.0-e92727.svg"></img></a>
+<a target="_blank"><img src="https://img.shields.io/badge/Made%20in-Visual%20Basic%206.0-0078D4.svg"></img></a>
 <a target="_blank"><img src="https://img.shields.io/badge/License-GNU%20General%20Public%20License%20v3.0-e98227.svg"></img></a>
 
 This is my own version of Argentum Online, programmed in Visual Basic 6.0, it comes with its Client-Server and all its tools (designs in Photoshop format, World-Editor, resource compressor, etc).
