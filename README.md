@@ -26,4 +26,6 @@ This is my own version of Argentum Online, programmed in Visual Basic 6.0, it co
 # Thanks to
 <b>Pablo Marquez - creator of the game Argentum Online</b>
 
-The people of the gs-zone.org forum that some of the tools were released by them
+The people of the gs-zone forum that some of the tools were released by them
+
+<a target="_blank" href="https://www.gs-zone.org/"><img src="https://www.gs-zone.org/styles/default/gszone/logo.png"></img></a>
